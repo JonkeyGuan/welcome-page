@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+        >
+    <ui:style>
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </ui:style>
+
+    <ui:with field="i18n" type="com.welcome.client.resources.i18n.WelcomeConstants"/>
+
+    <b:Container fluid="true" addStyleNames="{style.container}">
+        <b:Row>
+            <b:Column size="MD_3">
+                <b:InputGroup>
+                    <b:TextBox ui:field="termTextBox" placeholder="placehodler"/>
+                    <b:InputGroupButton>
+                        <b:Button icon="SEARCH" ui:field="search"/>
+                    </b:InputGroupButton>
+                </b:InputGroup>
+            </b:Column>
+        </b:Row>
+    </b:Container>
+</ui:UiBinder>
